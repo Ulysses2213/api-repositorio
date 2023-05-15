@@ -18,6 +18,8 @@ use Illuminate\Support\Facades\Route;
 Route::post('/authUser', 'App\Http\Controllers\UserController@authUser');
 Route::post('/addUser', 'App\Http\Controllers\UserController@addUser');
 
+//RUTAS PARA LOS REPOSITORIOS
+Route::get('/getRepos', 'App\Http\Controllers\RespoController@getRepos');
 
 //RUTAS PARA LOS ARCHIVOS
 Route::post('/upFile', 'App\Http\Controllers\FileController@upFile');
